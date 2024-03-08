@@ -9,6 +9,7 @@
 ## 安装教程
 - 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
 ## 扩容教程
+#### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
 - 利用Ubuntu或者deepin等Linux系统扩容Overlay空间大小
 - 在镜像文件后面增加空数据，比如增加10GB
 - 输入命令：```dd if=/dev/zero bs=1G count=10 >> 固件.img```
