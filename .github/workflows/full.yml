@@ -27,7 +27,7 @@ env:
 
 jobs:
   Build:
-    runs-on: self-hosted
+    runs-on: ubuntu-20.04
     outputs:
       OPENWRTROOT: ${{ steps.update.outputs.OPENWRTROOT }}
       PLATFORM: ${{ steps.compile.outputs.PLATFORM }}
@@ -38,8 +38,24 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@v3
-
+      uses: actions/checkout@v4
+      
+    - name: Free Disk Space (Ubuntu)
+      uses: jlumbroso/free-disk-space@main
+      with:
+        # this might remove tools that are actually needed,
+        # if set to "true" but frees about 6 GB
+        tool-cache: false
+        
+        # all of these default to true, but feel free to set to
+        # "false" if necessary for your workflow
+        android: true
+        dotnet: true
+        haskell: true
+        large-packages: true
+        docker-images: true
+        swap-storage: true
+        
     - name: Clone Source Code
       run: |
         df -hT $PWD
@@ -87,12 +103,12 @@ jobs:
       run: |
         cd $OPENWRTROOT
         echo -e "$(nproc) thread compile"
-        make tools/compile -j$(nproc) || make tools/compile -j$(nproc)
-        make toolchain/compile -j$(nproc) || make toolchain/compile -j$(nproc)
-        make target/compile -j$(nproc) || make target/compile -j$(nproc) IGNORE_ERRORS=1
-        make diffconfig
-        make package/compile -j$(nproc) IGNORE_ERRORS=1 || make package/compile -j$(nproc) IGNORE_ERRORS=1
-        make package/index
+        make -j1 V=s tools/compile -j$(nproc) || make- j1 V=s tools/compile -j$(nproc)
+        make -j1 V=s toolchain/compile -j$(nproc) || make -j1 V=s toolchain/compile -j$(nproc)
+        make -j1 V=s target/compile -j$(nproc) || make -j1 V=s target/compile -j$(nproc) IGNORE_ERRORS=1
+        make -j1 V=s diffconfig
+        make -j1 V=s package/compile -j$(nproc) IGNORE_ERRORS=1 || make -j1 V=s package/compile -j$(nproc) IGNORE_ERRORS=1
+        make -j1 V=s package/index
         cd $OPENWRTROOT/bin/packages/*
         PLATFORM=$(basename `pwd`)
         echo "PLATFORM=$PLATFORM" >> $GITHUB_ENV
@@ -178,7 +194,7 @@ jobs:
           keep_minimum_runs: 1
 
     - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@v0.2.1
+      uses: dev-drprasad/delete-older-releases@v0.4.0
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
           keep_latest: 20
