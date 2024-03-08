@@ -12,6 +12,8 @@
 ## 扩容教程
 #### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
 - 利用Ubuntu或者deepin等Linux系统扩容Overlay空间大小
+- 把 .gz 压缩文件解压为 .img 镜像文件
+- 输入命令：```gzip -kd 固件.img.gz```
 - 在镜像文件后面增加空数据，比如增加10GB
 - 输入命令：```dd if=/dev/zero bs=1G count=10 >> 固件.img```
 - 现在执行查看分区
@@ -27,7 +29,7 @@ Warning: Not all of the space available to xx.img appears to be used, you
 can fix the GPT to use all of the space (an extra xx blocks) or continue with the current setting?</br>
 Fix/Ignore?  
 - 输入命令：```Fix```
-- 选择正确的分区号，一般选2
+- 选择正确的分区号（列表中显示最大空间的序号），一般选 2
 - 输入命令：```resizepart 2 100%```
 - 完成最后退出
 - 输入命令：```quit```
