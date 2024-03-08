@@ -7,7 +7,7 @@
 - ext4 格式的 rootfs 可以扩展磁盘空间大小，而 squashfs 不能。
 - squashfs 格式的 rootfs 可以使用重置功能（恢复出厂设置），而 ext4 不能。
 ## 安装教程
-- 安装所需软件 [Rufus](https://rufus.ie/zh/)
+- 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
 ## 扩容教程
 - 利用Ubuntu或者deepin等Linux系统扩容Overlay空间大小
 - 在镜像文件后面增加空数据，比如增加10GB
