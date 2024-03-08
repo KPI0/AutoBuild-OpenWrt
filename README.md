@@ -7,6 +7,7 @@
 - ext4 格式的 rootfs 可以扩展磁盘空间大小，而 squashfs 不能。
 - squashfs 格式的 rootfs 可以使用重置功能（恢复出厂设置），而 ext4 不能。
 ## 安装教程
+- 利用硬盘盒将固件烧录到硬盘里
 - 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
 ## 扩容教程
 #### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
@@ -17,18 +18,19 @@
 - 输入命令：```parted 固件.img```
 - 确定需要扩容的分区号
 - 输入命令：```print```
-- 此时如果报错（没报错则请忽略）
-Error: The backup GPT table is corrupt, but the primary appears OK, so that will be used.
+- 此时如果报错（没报错则请忽略）</br>
+Error: The backup GPT table is corrupt, but the primary appears OK, so that will be used.</br>
 OK/Cancel?  
-则输入OK，敲回车。  
-如果紧接着报警告（没报则请忽略）：Warning: Not all of the space available to xx.img appears to be used, you
-can fix the GPT to use all of the space (an extra xx blocks) or continue with the current setting?
+- 输入命令：```OK```
+- 如果紧接着报警告（没报则请忽略）</br>
+Warning: Not all of the space available to xx.img appears to be used, you
+can fix the GPT to use all of the space (an extra xx blocks) or continue with the current setting?</br>
 Fix/Ignore?  
-则输入Fix，敲回车。  
-- 选择正确的分区号，一般是2
+- 输入命令：```Fix```
+- 选择正确的分区号，一般选2
 - 输入命令：```resizepart 2 100%```
 - 完成最后退出
-- 输入指令：```quit```
+- 输入命令：```quit```
 - 完成扩容
 
 # AutoBuild-OpenWrt
