@@ -66,7 +66,7 @@ Fix/Ignore?
 　├── 挂载点<br/>
 　├── 磁盘管理<br/>
 　├── 备份/升级<br/>
-  ├── 自定义命令<br/>
+　├── 自定义命令<br/>
 　├── 文件传输<br/>
 　├── Argon 主题设置<br/>
 　└── 重启
@@ -94,7 +94,7 @@ Fix/Ignore?
 </details>
 <details>
 <summary><b>├── 网络存储</b></summary>
-  ├── 文件助手<br/>
+　├── 文件助手<br/>
 　├── 文件浏览器<br/>
 　├── NFS 管理<br/>
 　├── Alist 文件列表<br/>
@@ -108,16 +108,16 @@ Fix/Ignore?
 <details>
 <summary><b>├── VPN</b></summary>
 　├── SSR MuDB 服务器<br/>
-  ├── IPSec VPN 服务器<br/>
+　├── IPSec VPN 服务器<br/>
 　├── SoftEther VPN 服务器<br/>
 　├── PPTP VPN 服务器<br/>
-  ├── OpenVPN 服务器<br/>
+　├── OpenVPN 服务器<br/>
 　└── ZeroTier
 </details>
 <details>
 <summary><b>├── 网络</b></summary>
 　├── 接口<br/>
-  ├── 无线<br/>
+　├── 无线<br/>
 　├── DHCP/DNS<br/>
 　├── 主机名<br/>
 　├── IP/MAC 绑定<br/>
