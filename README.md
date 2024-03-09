@@ -7,11 +7,16 @@
 - ext4 格式的 rootfs 可以扩展磁盘空间大小，而 squashfs 不能。
 - squashfs 格式的 rootfs 可以使用重置功能（恢复出厂设置），而 ext4 不能。
 
-## 安装教程
+#### 默认编译
+- 用户名：root
+- 密码：password
+- 管理IP：10.10.10.10
+
+### 安装教程
 - 利用硬盘盒将固件烧录到硬盘里
 - 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
 
-## 扩容教程
+### 扩容教程
 #### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
 - 利用Ubuntu或者deepin等Linux系统扩容Overlay空间大小
 - 把 .gz 压缩文件解压为 .img 镜像文件
@@ -37,7 +42,7 @@ Fix/Ignore?
 - 输入命令：```quit```
 - 完成扩容
 
-## 插件预览
+### 插件预览
 <details>
 <summary><b>&nbsp; 插件预览</b></summary>
 <br/>
@@ -162,10 +167,10 @@ Fix/Ignore?
 　└── <b>退出</b>
 </details>
 
-## 插件安装
+### 插件安装
 - [关机](https://github.com/sirpdboy/luci-app-poweroffdevice)
 - [定时重启](https://github.com/kongfl888/luci-app-timedreboot)
 - [定时设置](https://github.com/sirpdboy/luci-app-autotimeset)
 
-# AutoBuild-OpenWrt
+### AutoBuild-OpenWrt
 ### 源码来自https://github.com/DHDAXCW/OpenWRT_x86_x64
