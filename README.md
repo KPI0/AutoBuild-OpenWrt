@@ -73,24 +73,35 @@ Fix/Ignore?
 </details>
 <details>
 <summary><b>├── 服务</b></summary>
+　├── PassWall 2<br/>
+　├── DAED Next<br/>
 　├── PassWall<br/>
-　├── PassWall2<br/>
 　├── AdGuard Home<br/>
 　├── ShadowSocksR Plus+<br/>
+　├── 阿里云盘 WebDAV<br/>
 　├── 应用过滤<br/>
-　├── 全能推送<br/>
-　├── 上网时间控制<br/>
-　├── OpenClash<br/>
-　├── Lucky<br/>
-　├── 动态 DNS<br/>
-　├── SmartDNS<br/>
 　├── MosDNS<br/>
+　├── 上网时间控制<br/>
+　├── 全能推送<br/>
+　├── OpenClash<br/>
+　├── 动态 DNS<br/>
+　├── QoS Nftables 版<br/>
+　├── WiFi 计划<br/>
+　├── SmartDNS<br/>
+　├── 迅雷快鸟<br/>
 　├── 网络唤醒<br/>
 　├── Frps<br/>
+　├── UU游戏加速器<br/>
+　├── Tinyproxy<br/>
 　├── UPnP<br/>
+　├── Shairplay<br/>
 　├── Frp 内网穿透<br/>
 　├── KMS 服务器<br/>
-　└── Nps 内网穿透
+　├── AirPlay 2 音频接收器<br/>
+　├── udpxy<br/>
+　├── Nps 内网穿透<br/>
+　├── HAProxy<br/>
+　└── MWAN3 分流助手
 </details>
 <details>
 <summary><b>├── 网络存储</b></summary>
