@@ -98,12 +98,19 @@ Fix/Ignore?
 　├── 文件浏览器<br/>
 　├── NFS 管理<br/>
 　├── Alist 文件列表<br/>
+　├── qBittorrent<br/>
+　├── PS3 NET 服务器<br/>
 　├── USB 打印服务器<br/>
 　├── 硬盘休眠<br/>
-　├── 打印服务器<br/>
+　├── miniDLNA<br/>
+　├── FTP 服务器<br/>
+　├── MJPG-streamer<br/>
 　├── 网络共享<br/>
+　├── 挂载 SMB 网络共享文件夹<br/>
+　├── PCHiFi 数字转盘遥控<br/>
 　├── Aria2 配置<br/>
-　└── FTP 服务器
+　├── Transmission<br/>
+　└── Rclone
 </details>
 <details>
 <summary><b>├── VPN</b></summary>
