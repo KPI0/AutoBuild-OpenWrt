@@ -38,7 +38,7 @@ Warning: Not all of the space available to xx.img appears to be used, you
 can fix the GPT to use all of the space (an extra xx blocks) or continue with the current setting?</br>
 Fix/Ignore?  
 - 输入命令：```Fix```
-- 选择正确的分区号（列表中显示最大空间的序号），一般选 2
+- 选择正确的分区号（列表中显示最大空间size的序号），一般选 2（Flags没有标识）
 - 输入命令：```resizepart 2 100%```
 - 完成最后退出
 - 输入命令：```quit```
