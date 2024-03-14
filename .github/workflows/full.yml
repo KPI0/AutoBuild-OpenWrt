@@ -40,25 +40,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: Install LLVM/Clang
-      run: sudo apt install -y clang
-
-    - name: Free Disk Space (Ubuntu)
-      uses: jlumbroso/free-disk-space@main
-      with:
-        # this might remove tools that are actually needed,
-        # if set to "true" but frees about 6 GB
-        tool-cache: false
-
-        # all of these default to true, but feel free to set to
-        # "false" if necessary for your workflow
-        android: true
-        dotnet: true
-        haskell: true
-        large-packages: true
-        docker-images: true
-        swap-storage: true
-
     - name: Clone Source Code
       run: |
         df -hT $PWD
@@ -167,7 +148,7 @@ jobs:
           echo "release_tag=$(date +"%Y.%m.%d")-Lean3" >> $GITHUB_OUTPUT
           echo "release_date=$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
           touch release.txt
-          echo "后台地址：10.10.10.10
+          echo "后台地址：192.168.11.1
                 full   = 全插件
                 docker = 带docker
                 slim   = 精简版

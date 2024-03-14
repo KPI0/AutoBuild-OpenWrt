@@ -41,12 +41,6 @@ git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 # Add luci-proto-minieap
 git clone --depth=1 https://github.com/ysc3839/luci-proto-minieap
 
-# Add luci-app-poweroffdevice
-git clone https://github.com/sirpdboy/luci-app-poweroffdevice package/luci-app-poweroffdevice
-
-# Add luci-app-autotimeset
-git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
-
 # Add luci-app-onliner (need luci-app-nlbwmon)
 git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 
@@ -106,4 +100,4 @@ rm -rf nas-packages-luci/luci/luci-app-istorex
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
 
 # Modify default IP
-sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
