@@ -46,7 +46,7 @@ Fix/Ignore?
 
 ### 插件预览
 <details>
-<summary><b>&nbsp; 插件预览</b></summary>
+<summary><b>&nbsp; 插件预览（full版本）</b></summary>
 <br/>
 <details>
 <summary><b>├── 状态</b></summary>
