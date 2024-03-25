@@ -47,8 +47,8 @@ git clone --depth=1 https://github.com/rufengsuixing/luci-app-onliner
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash
 
-# Add luci-app-poweroff
-git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff
+# Add luci-app-poweroffdevice
+git clone --depth=1 https://github.com/sirpdboy/luci-app-poweroffdevice
 
 # Add luci-theme
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
