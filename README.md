@@ -47,6 +47,17 @@ Fix/Ignore?
 ### 自定义设置
 #### 1.修改默认管理IP
 修改文件 scripts/lean.sh 中的 sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate
+#### 2.修改默认LAN绑定eth0，WAN绑定eth1 [参考原文](https://github.com/coolsnowwolf/lede/issues/11506)</br>
+2.1 获取board id</br>
+cat /tmp/sysinfo/board_name</br>
+2.2 保存记住你的board id</br>
+2.3 根据board id编写相应的设置</br>
+如果 board id 有效，不是长得像default string那种字符</br>
+编辑 target/linux/你的板子platform/etc/board.d/02_network</br>
+添加你的板子case到文件中</br>
+如果你的board id 无效，就是长得像default string那种字符</br>
+编辑 package/base-files/files/etc/board.d/99-default_network</br>
+将默认设置修改为你想要的样式</br>
 
 ### 插件预览
 <details>
