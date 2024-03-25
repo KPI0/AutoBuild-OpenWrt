@@ -75,13 +75,13 @@ Fix/Ignore?
 　├── 备份/升级<br/>
 　├── 自定义命令<br/>
 　├── 文件传输<br/>
+　├── 重启<br/>
 　├── Argon 主题设置<br/>
-　└── 重启
+　└── 关机
 </details>
 <details>
 <summary><b>├── 服务</b></summary>
 　├── PassWall 2<br/>
-　├── DAED Next<br/>
 　├── PassWall<br/>
 　├── AdGuard Home<br/>
 　├── ShadowSocksR Plus+<br/>
