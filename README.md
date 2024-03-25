@@ -170,7 +170,6 @@ Fix/Ignore?
 </details>
 
 ### 插件安装
-- [关机](https://github.com/sirpdboy/luci-app-poweroffdevice)
 - [定时重启](https://github.com/kongfl888/luci-app-timedreboot)
 - [定时设置](https://github.com/sirpdboy/luci-app-autotimeset)
 
