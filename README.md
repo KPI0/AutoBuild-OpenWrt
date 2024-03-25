@@ -44,6 +44,10 @@ Fix/Ignore?
 - 输入命令：```quit```
 - 完成扩容
 
+### 自定义设置
+#### 1.修改默认管理IP
+修改文件 scripts/lean.sh 中的 sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate
+
 ### 插件预览
 <details>
 <summary><b>&nbsp; 插件预览（full版本）</b></summary>
