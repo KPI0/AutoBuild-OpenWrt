@@ -58,6 +58,8 @@ cat /tmp/sysinfo/board_name</br>
 如果你的board id 无效，就是长得像default string那种字符</br>
 编辑 package/base-files/files/etc/board.d/99-default_network</br>
 将默认设置修改为你想要的样式</br>
+#### 3.修改默认壁纸
+修改文件 scripts/lean.sh 中的cp -f $GITHUB_WORKSPACE/picture/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
 ### 插件预览
 <details>
