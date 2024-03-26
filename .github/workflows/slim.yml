@@ -78,6 +78,7 @@ jobs:
         cd $OPENWRTROOT
         cat .config
         make download -j50
+        make download
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
   
@@ -152,7 +153,7 @@ jobs:
           echo "release_tag=$(date +"%Y.%m.%d")-Lean3" >> $GITHUB_OUTPUT
           echo "release_date=$(date +"%Y.%m.%d")" >> $GITHUB_OUTPUT
           touch release.txt
-          echo "后台地址：10.10.10.10
+          echo "后台地址：192.168.11.1
                 full   = 全插件
                 docker = 带docker
                 slim   = 精简版
