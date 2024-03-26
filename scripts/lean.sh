@@ -51,10 +51,6 @@ git clone --depth=1 https://github.com/vernesong/OpenClash
 # Add luci-app-poweroffdevice
 git clone --depth=1 https://github.com/sirpdboy/luci-app-poweroffdevice
 
-# 定时重启
-# Add luci-app-timedreboot
-git clone --depth=1 https://github.com/kongfl888/luci-app-timedreboot
-
 # Add luci-theme
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
