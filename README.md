@@ -91,6 +91,7 @@ cat /tmp/sysinfo/board_name</br>
 　├── 磁盘管理<br/>
 　├── 备份/升级<br/>
 　├── 自定义命令<br/>
+　├── 定时重启<br/>
 　├── 文件传输<br/>
 　├── 重启<br/>
 　├── Argon 主题设置<br/>
