@@ -207,7 +207,8 @@ Runner image 选择 Linux x64</br>
 在ubuntu终端中输入
 
 ### 6. 编译问题
-- rdate: 未找到命令
+- 执行：export date_version=$(date -d "$(rdate -n -4 -p ntp.aliyun.com)" +'%Y-%m-%d')</br>
+返回：rdate: 未找到命令
 ```bash
    sudo apt-get update
    sudo apt-get install rdate
