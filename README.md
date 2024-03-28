@@ -15,8 +15,8 @@
 - WAN：eth1
 
 ### 1. 安装教程
-- 利用硬盘盒将固件烧录到硬盘里
 - 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
+- 利用硬盘盒将固件烧录到硬盘里
 
 ### 2. 扩容教程
 #### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
