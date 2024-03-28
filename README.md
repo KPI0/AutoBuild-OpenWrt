@@ -206,5 +206,12 @@ Fix/Ignore?
 Runner image 选择 Linux x64</br>
 在ubuntu终端中输入
 
+### 6. 编译问题
+- rdate: 未找到命令
+```bash
+   sudo apt-get update
+   sudo apt-get install rdate
+```
+
 ### AutoBuild-OpenWrt
 ### 源码来自https://github.com/DHDAXCW/OpenWRT_x86_x64
