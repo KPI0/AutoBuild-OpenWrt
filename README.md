@@ -14,11 +14,11 @@
 - LAN：eth0
 - WAN：eth1
 
-### 安装教程
+### 1. 安装教程
 - 利用硬盘盒将固件烧录到硬盘里
 - 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
 
-### 扩容教程
+### 2. 扩容教程
 #### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
 - 利用Ubuntu或者deepin等Linux系统扩容Overlay空间大小
 - 把 .gz 压缩文件解压为 .img 镜像文件
@@ -44,10 +44,10 @@ Fix/Ignore?
 - 输入命令：```quit```
 - 完成扩容
 
-### 自定义设置
-#### 1.修改默认管理IP
+### 3. 自定义设置
+#### 3.1 修改默认管理IP
 修改文件 scripts/lean.sh 中的 sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate
-#### 2.修改默认LAN绑定eth0，WAN绑定eth1 [参考原文](https://github.com/coolsnowwolf/lede/issues/11506)</br>
+#### 3.2 修改默认LAN绑定eth0，WAN绑定eth1 [参考原文](https://github.com/coolsnowwolf/lede/issues/11506)</br>
 2.1 获取board id</br>
 cat /tmp/sysinfo/board_name</br>
 2.2 保存记住你的board id</br>
@@ -58,10 +58,10 @@ cat /tmp/sysinfo/board_name</br>
 如果你的board id 无效，就是长得像default string那种字符</br>
 编辑 package/base-files/files/etc/board.d/99-default_network</br>
 将默认设置修改为你想要的样式</br>
-#### 3.修改默认壁纸
+#### 3.3 修改默认壁纸
 修改文件 scripts/lean.sh 中的cp -f $GITHUB_WORKSPACE/picture/bg1.jpg luci-theme-argon/htdocs/luci-static/argon/img/bg1.jpg
 
-### 插件预览
+### 4. 插件预览
 <details>
 <summary><b>&nbsp; 插件预览（full版本）</b></summary>
 <br/>
@@ -187,9 +187,9 @@ cat /tmp/sysinfo/board_name</br>
 　└── <b>退出</b>
 </details>
 
-### 自建 self-hosted runners
-1.安装 ubuntu</br>
-2.Install compilation dependencies</br>
+### 5. 自建 self-hosted runners
+5.1 安装 ubuntu</br>
+5.2 Install compilation dependencies</br>
 ```bash
    sudo apt update -y
    sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
@@ -200,7 +200,7 @@ cat /tmp/sysinfo/board_name</br>
    python3-pyelftools python3-setuptools qemu-utils rsync scons squashfs-tools subversion swig texinfo \
    uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
    ```
-3.找到 Settings-Actions-Runners-New self-hosted runners</br>
+5.3 找到 Settings-Actions-Runners-New self-hosted runners</br>
 Runner image 选择 Linux x64</br>
 在ubuntu终端中输入
 
