@@ -204,9 +204,5 @@ cat /tmp/sysinfo/board_name</br>
 Runner image 选择 Linux x64</br>
 在ubuntu终端中输入
 
-### 插件安装
-- [定时重启](https://github.com/kongfl888/luci-app-timedreboot)
-- [定时设置](https://github.com/sirpdboy/luci-app-autotimeset)
-
 ### AutoBuild-OpenWrt
 ### 源码来自https://github.com/DHDAXCW/OpenWRT_x86_x64
