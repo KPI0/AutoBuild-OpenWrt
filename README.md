@@ -49,10 +49,10 @@ Fix/Ignore?
 修改文件 scripts/lean.sh 中的</br>
 ```sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate```
 #### 3.2 修改默认LAN绑定eth0，WAN绑定eth1 [参考原文](https://github.com/coolsnowwolf/lede/issues/11506)</br>
-2.1 获取board id</br>
+3.2.1 获取board id</br>
 ```cat /tmp/sysinfo/board_name```</br>
-2.2 保存记住你的board id</br>
-2.3 根据board id编写相应的设置</br>
+3.2.2 保存记住你的board id</br>
+3.2.3 根据board id编写相应的设置</br>
 如果 board id 有效，不是长得像default string那种字符</br>
 编辑 target/linux/你的板子platform/etc/board.d/02_network</br>
 添加你的板子case到文件中</br>
@@ -101,8 +101,8 @@ Fix/Ignore?
 </details>
 <details>
 <summary><b>├── 服务</b></summary>
-　├── PassWall 2<br/>
 　├── PassWall<br/>
+　├── PassWall 2<br/>
 　├── AdGuard Home<br/>
 　├── ShadowSocksR Plus+<br/>
 　├── 阿里云盘 WebDAV<br/>
