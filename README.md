@@ -47,7 +47,7 @@ Fix/Ignore?
 #### 3.1 修改默认管理IP
 修改文件 scripts/lean.sh 中的</br>
 ```sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate```
-#### 3.2 修改默认LAN绑定eth0，WAN绑定eth1 [参考原文](https://github.com/coolsnowwolf/lede/issues/11506)</br>
+#### 3.2 [修改默认LAN绑定eth0，WAN绑定eth1](https://github.com/coolsnowwolf/lede/issues/11506)</br>
 3.2.1 获取board id</br>
 ```cat /tmp/sysinfo/board_name```</br>
 3.2.2 保存记住你的board id</br>
