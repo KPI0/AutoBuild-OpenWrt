@@ -44,7 +44,7 @@ Fix/Ignore?
 - 输入命令：```quit```
 - 完成扩容
 
-### 3. 自定义设置
+### 3. 个性设置
 #### 3.1 修改默认管理IP
 修改文件 scripts/lean.sh 中的</br>
 ```sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate```
