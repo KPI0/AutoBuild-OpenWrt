@@ -192,6 +192,3 @@ jobs:
       with:
          name: |
             bin-archive
-            
-    - name: Shutdown
-      run: sudo shutdown +1 
