@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: x86-x64-全插件
+name: x86-x64-全插件-shutdown
 
 on:
   repository_dispatch:
