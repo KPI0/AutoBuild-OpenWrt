@@ -18,8 +18,7 @@
 - 安装所需软件 [Rufus](https://rufus.ie/zh/) 或者 [balenaEtcher](https://etcher.balena.io/)
 - 利用硬盘盒将固件烧录到硬盘里
 
-### 2. 扩容教程
-#### [参考原文](https://blog.csdn.net/zengd0/article/details/124934933)
+### 2. [扩容教程](https://blog.csdn.net/zengd0/article/details/124934933)
 - 利用Ubuntu或者deepin等Linux系统扩容Overlay空间大小
 - 把 .gz 压缩文件解压为 .img 镜像文件
 - 输入命令：```gzip -kd 固件.img.gz```
