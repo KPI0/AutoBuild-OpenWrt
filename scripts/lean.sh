@@ -10,7 +10,7 @@
 # Clone community packages to package/community
 
 # alist
-git clone https://github.com/sbwml/luci-app-alist package/alist
+git clone https://github.com/DHDAXCW/luci-app-alist package/alist
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 
@@ -64,7 +64,7 @@ git clone https://github.com/DHDAXCW/theme
 git clone --depth=1 https://github.com/tindy2013/openwrt-subconverter
 
 # alist
-git clone --depth=1 https://github.com/DHDAXCW/openwrt-alist
+git clone --depth=1 https://github.com/sbwml/openwrt-alist
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
