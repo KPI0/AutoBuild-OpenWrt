@@ -29,6 +29,10 @@ git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 # Add OpenClash
 git clone --depth=1 https://github.com/vernesong/OpenClash
 
+# 关机
+# Add luci-app-poweroffdevice
+git clone --depth=1 https://github.com/sirpdboy/luci-app-poweroffdevice
+
 # Add luci-theme
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
