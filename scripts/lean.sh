@@ -18,6 +18,8 @@ rm -rf ../../customfeeds/luci/applications/luci-app-kodexplorer
 rm -rf openwrt-package/verysync
 rm -rf openwrt-package/luci-app-verysync
 
+# apppppppp
+git clone --depth=1 https://github.com/DHDAXCW/dhdaxcw-app
 # Add luci-app-ssr-plus
 git clone --depth=1 https://github.com/fw876/helloworld
 
@@ -46,7 +48,7 @@ git clone https://github.com/DHDAXCW/theme
 git clone --depth=1 https://github.com/gdy666/luci-app-lucky
 
 # alist
-git clone --depth=1 https://github.com/sbwml/luci-app-alist
+git clone -b lua --depth=1 https://github.com/sbwml/luci-app-alist
 
 # Add OpenAppFilter
 git clone --depth=1 https://github.com/destan19/OpenAppFilter
@@ -64,6 +66,12 @@ popd
 
 
 rm -rf nas-packages-luci/luci/luci-app-istorex
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
+rm -rf package/feeds/packages/libmbim
+rm -rf package/feeds/packages/lame
+rm -rf package/feeds/packages/apk
+rm -rf package/feeds/packages/adguardhome
 
 # Change default shell to zsh
 sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
