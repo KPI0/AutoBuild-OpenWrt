@@ -218,8 +218,8 @@ Runner image 选择 Linux x64</br>
 ![image](https://github.com/KPI0/AutoBuild-OpenWrt/blob/main/picture/1.png)  
 
 7.2 剩余网口改lan口  
-网络》接口》设备》br-lan》配置》常规设备选项》网桥接口  
-![image]()  
+网络》接口》设备》br-lan》配置》常规设备选项》网桥端口  
+![image](https://github.com/KPI0/AutoBuild-OpenWrt/blob/main/picture/2.png)  
 
 ### AutoBuild-OpenWrt
 ### 源码来自https://github.com/DHDAXCW/OpenWRT_x86_x64
