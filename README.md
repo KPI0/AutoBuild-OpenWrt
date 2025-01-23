@@ -212,6 +212,10 @@ Runner image 选择 Linux x64</br>
    sudo apt-get update
    sudo apt-get install rdate
 ```
+### 7. 个人设置记录备份(ImmortalWrtx系统)
+7.1 通过wan口访问管理后台
+网络》防火墙》区域》区域转发》wan REJECT》入站数据【拒绝】改【接受】
+7.2 剩余网口改lan口
 
 ### AutoBuild-OpenWrt
 ### 源码来自https://github.com/DHDAXCW/OpenWRT_x86_x64
